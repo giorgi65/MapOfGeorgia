@@ -11,4 +11,4 @@ See here>>> <a href="https://giorgi65.github.io/MapOfGeorgia/" target="_blank">á
 
 
 
-<a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a>
+
