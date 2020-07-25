@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>არჩევნები 2020</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="/svg/geo/ajpoll/jquery.js"></script>
+<script type="text/javascript" src="/svg/geo/ajpoll/ajax-poll.php"></script>
+
+
+       <link rel="stylesheet" href="style.css">
+
+	  
+	  <script LANGUAGE="JavaScript">
+
+
+
+function showFilled(Value) {
+  return (Value > 9) ? "" + Value : "0" + Value;
+};
+
+
+function StartClock24() {
+  TheTime = new Date;
+  document.clock.showTime.value = showFilled(TheTime.getHours()) + ":" + showFilled(TheTime.getMinutes()) + ":" + showFilled(TheTime.getSeconds());
+  setTimeout("StartClock24()",1000)
+}
+
+
+
+</script>
+</head>
+<body onLoad="StartClock24()">
+
+
+
+<div class="phone-wrapper">
+  <div class="nav"><a class="nav-left"><b>ოპოზიცია</b></a><a class="nav-mid"></a><a class="nav-right"><b>მთავრობა</b></a></div>
+  <div class="mid">
+    <div class="mid-banner">
+      <div class="image-one"></div>
+      <div class="image-two"></div>
+    </div>
+    <div class="mid-ornament">
+      <div class="mid-diamond"><span>VS</span></div>
+    </div>
+	<div id="poll" class="button-group">
+      <p></p>
+	  <br>
+	  
+    </div>
+	<div id="poll" class='ajax-poll' tclass='poll-2020' style='width:420px;'></div>
+	<div id="result" class="mid-info">
+	<div class="datetime">
+	  <form name=clock>
+	  <input type=text name=showTime align=center size=6 class=input>
+	  </form>
+	  </div>
+    </div>
+		
+	 </div>
+	  </div>
+	
+     
+	  
+</body>
+</html>
